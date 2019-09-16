@@ -11,8 +11,19 @@ public class AddressBook {
 		return buddies.remove(buddy);
 	}
 	
+	public int getSize() {
+		return buddies.size();
+	}
+	
+	public AddressBook() {
+		this.buddies = new ArrayList<BuddyInfo>();
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stubs
-		System.out.println("Address Book");
+		BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
+		AddressBook addressBook = new AddressBook();
+		addressBook.addBuddy(buddy);
+		addressBook.removeBuddy(buddy);
 	}
 }
