@@ -30,4 +30,5 @@ public class AddressBook {
 		addressBook.removeBuddy(buddy);
 		System.out.println("Size after remove is " + addressBook.getSize());
 	}
+	// This is a comment for step 23 of SYSC 3110 Lab 3
 }
